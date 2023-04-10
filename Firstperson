@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
-using UnityStandardAssets.Characters.ThirdPerson;
 
-namespace ShadowedSouls.Items
-{
     public class GrapplingHook : MonoBehaviour
     {
     #region Variables
@@ -20,9 +17,6 @@ namespace ShadowedSouls.Items
 
         private GUIStyle style = new GUIStyle();
 
-        // [CAN BE CHANGED]
-        private ThirdPersonCharacter playerControl;         // Unity Standard Assets 
-        private float heightOffset;                         // The height of the player transform
 
 
         // [LEAVE AS IS BELOW THIS POINT]
@@ -48,8 +42,6 @@ namespace ShadowedSouls.Items
     #region StartUpdates
         void Start()
         {
-            // [CAN BE CHANGED]
-            playerControl = GetComponent<ThirdPersonCharacter>();
 
             // [LEAVE ALONE BEYOND HERE]
             rb = GetComponent<Rigidbody>();
