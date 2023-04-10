@@ -28,7 +28,7 @@
 
         [SerializeField] private bool isSecured = false, firedHook = false;     // For debug and script purposes.
         [SerializeField] private bool isTargeting = false;                      // For debug and script purposes.
-        private Rigidbody rb;                                                   // Player's attached rigidbody.
+        private CharacterController rb;                                                   // Player's attached rigidbody.
 
         private float step;                                                     // Grappling movement broken up
         private float momentum;                                                 // Grappling speed build up
@@ -44,7 +44,7 @@
         {
 
             // [LEAVE ALONE BEYOND HERE]
-            rb = GetComponent<Rigidbody>();
+            rb = GetComponent<CharacterController>();
             heightOffset = GetComponent<CapsuleCollider>().height;
         }
 
